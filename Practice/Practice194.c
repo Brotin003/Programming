@@ -1,14 +1,15 @@
 // Write problem 5's structure using typedef
 #include <stdio.h>
-typedef struct complex {
+struct complex
+{
     float real;
     float imag;
-} comp;
+};
 
-comp add(comp n1, comp n2);
-
-int main() {
-    comp n1, n2, result;
+struct complex add(struct complex n1, struct complex n2);
+int main()
+{
+    struct complex n1, n2, result;
 
     printf("For 1st comp number \n");
     printf("Enter the real and imaginary parts: ");
@@ -22,9 +23,9 @@ int main() {
     printf("Sum = %.1f + %.1fi", result.real, result.imag);
     return 0;
 }
-
-comp add(comp n1, comp n2) {
-    comp temp;
+struct complex add(struct complex n1, struct complex n2)
+{
+    struct complex temp;
     temp.real = n1.real + n2.real;
     temp.imag = n1.imag + n2.imag;
     return (temp);

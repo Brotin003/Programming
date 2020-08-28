@@ -1,5 +1,5 @@
 // Printing starpattern
-include <stdio.h>
+#include <stdio.h>
 int main()
 {
     printf("*\n**\n***\n****\n*****");
