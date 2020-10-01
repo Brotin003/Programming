@@ -3,7 +3,7 @@
 #include <stdio.h>
 int main()
 {
-    int num1, num2, num3, max;
+    int num1, num2, num3, Max;
 
     // Input three numbers from user
     printf("Enter number First :-");
@@ -15,35 +15,10 @@ int main()
     printf("Enter number Third :-");
     scanf("%d", &num3);
 
-    if (num1 > num2)
-    {
-        if (num1 > num3)
-        {
-            // If num1 > num2 and num1 > num3
-            max = num1;
-        }
-        else
-        {
-            // If num1 > num2 but num1 > num3 is not true
-            max = num3;
-        }
-    }
-    else
-    {
-        if (num2 > num3)
-        {
-            // If num1 is not > num2 and num2 > num3
-            max = num2;
-        }
-        else
-        {
-            // If num1 is not > num2 and num2 > num3
-            max = num3;
-        }
-    }
+    Max = max(num1,max(num2,num3));
 
     //  Print maximum value
-    printf("Maximum number among all three numbers = %d", max);
+    printf("Maximum number among all three numbers = %d", Max);
 
     return 0;
 }
