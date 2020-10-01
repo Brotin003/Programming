@@ -1,10 +1,14 @@
 #include <stdio.h>
+
+
+// printing the 10 digits after a
 int main()
 {
     int a;
     printf("Heloo world\n");
     scanf("%d", &a);
-    while (a < 10) 
+    int b = a+10
+    while (a < b) 
     {
         printf("%d\n", a);
         a++;
